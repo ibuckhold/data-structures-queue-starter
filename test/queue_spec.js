@@ -80,7 +80,7 @@ describe('Queue', () => {
         expect(queue.back.value).to.equal('C');
       });
 
-      it('Should point the next property of the front node to the node that follows it for queues of size one or greater', () => {
+      it('Should point the next property of the back node to the node that follows it for queues of size one or greater', () => {
         queue.enqueue('A');
         queue.enqueue('B');
         expect(queue.front.next.value).to.eql('B');
